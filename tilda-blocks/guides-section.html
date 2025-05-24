@@ -1,0 +1,111 @@
+
+<!-- БЛОК ГАЙДОВ ДЛЯ ТИЛЬДЫ -->
+<div class="guides-section">
+  <div class="container">
+    <div class="section-header">
+      <h2>Пошаговые гайды</h2>
+      <p>От идеи до успешного запуска за 4 простых шага</p>
+    </div>
+    
+    <div class="guides-grid">
+      <div class="guide-card">
+        <div class="guide-number">01</div>
+        <div class="guide-icon">🔍</div>
+        <h3>Исследование</h3>
+        <p>Анализ рынка и конкурентов</p>
+      </div>
+      
+      <div class="guide-card">
+        <div class="guide-number">02</div>
+        <div class="guide-icon">🧠</div>
+        <h3>Концепция</h3>
+        <p>Разработка идеи и позиционирования</p>
+      </div>
+      
+      <div class="guide-card">
+        <div class="guide-number">03</div>
+        <div class="guide-icon">🖌️</div>
+        <h3>Дизайн</h3>
+        <p>Создание визуального образа</p>
+      </div>
+      
+      <div class="guide-card">
+        <div class="guide-number">04</div>
+        <div class="guide-icon">🚀</div>
+        <h3>Запуск</h3>
+        <p>Вывод бренда на рынок</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<style>
+.guides-section {
+  padding: 80px 0;
+  background: linear-gradient(90deg, #f8fafc 0%, #e0e7ff 100%);
+}
+
+.guides-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 24px;
+}
+
+.guide-card {
+  background: white;
+  border-radius: 12px;
+  padding: 32px 24px;
+  text-align: center;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+  transition: all 0.3s ease;
+  position: relative;
+}
+
+.guide-card:hover {
+  box-shadow: 0 10px 25px rgba(147, 51, 234, 0.15);
+  transform: translateY(-4px);
+}
+
+.guide-number {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #9333ea;
+  margin-bottom: 16px;
+}
+
+.guide-icon {
+  width: 48px;
+  height: 48px;
+  background: #f3e8ff;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 20px;
+  font-size: 24px;
+}
+
+.guide-card h3 {
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: #111827;
+  margin-bottom: 12px;
+}
+
+.guide-card p {
+  color: #6b7280;
+  line-height: 1.5;
+}
+
+@media (max-width: 768px) {
+  .guides-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 480px) {
+  .guides-grid {
+    grid-template-columns: 1fr;
+  }
+}
+</style>
